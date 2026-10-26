@@ -1,0 +1,8 @@
+[Unit]
+Description=oma-caffe minute tick (Auto-Roast theme sync + Coffee Time breaks)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/oma-caffe tick

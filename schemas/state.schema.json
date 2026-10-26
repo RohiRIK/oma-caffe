@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "oma-caffe state.json",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "profile": {
+      "type": "string"
+    },
+    "cups": {
+      "type": "array",
+      "description": "rolling 48h; feeds the half-life decay",
+      "items": {
+        "type": "object",
+        "required": [
+          "ts",
+          "mg"
+        ],
+        "properties": {
+          "ts": {
+            "type": "integer"
+          },
+          "profile": {
+            "type": "string"
+          },
+          "mg": {
+            "type": "number"
+          },
+          "recipe": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "active_recipe": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "break": {
+      "type": "object",
+      "properties": {
+        "next_due": {
+          "type": "integer"
+        },
+        "snoozed_until": {
+          "type": "integer"
+        },
+        "pomodoro": {
+          "type": "boolean"
+        },
+        "last_shown": {
+          "type": "integer"
+        }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "applied": {
+          "type": "string"
+        }
+      }
+    },
+    "ambience_pid": {
+      "type": "integer"
+    }
+  }
+}

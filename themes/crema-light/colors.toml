@@ -1,0 +1,38 @@
+# Crema Light — warm oat milk, golden crema, medium-roast edges, espresso ink.
+# Every text key clears WCAG AA (4.5:1) on background, the crema surface and
+# the selection; test/test_contrast.py enforces it.
+mode = "light"
+
+accent = "#8A4B1C"
+selection = "#E6D2B5"
+muted = "#73533F"
+
+background = "#F5EBE6"
+dark_background = "#EDDFD6"
+darker_background = "#E4D2C6"
+lighter_background = "#E6D2B5"
+
+foreground = "#2C1A12"
+dark_foreground = "#664834"
+light_foreground = "#46301F"
+bright_foreground = "#1E110B"
+
+red = "#9C2A1F"
+yellow = "#6E5000"
+orange = "#93400F"
+green = "#46621C"
+cyan = "#1F5F60"
+blue = "#2A5273"
+magenta = "#83305F"
+brown = "#653B1F"
+
+bright_red = "#88231A"
+bright_yellow = "#5F4500"
+bright_green = "#3B5517"
+bright_cyan = "#1A5253"
+bright_blue = "#244766"
+bright_magenta = "#722852"
+
+# Medium-roast window borders (non-text UI: 3:1 is the bar).
+hyprland_active_border = "#A67B5B"
+hyprland_inactive_border = "#E6D2B5"

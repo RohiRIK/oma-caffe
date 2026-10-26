@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "oma-caffe recipes.json",
+  "type": "object",
+  "required": [
+    "recipes"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recipe"
+      }
+    }
+  },
+  "$defs": {
+    "recipe": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "method",
+        "dose_g",
+        "steps"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string",
+          "examples": [
+            "Espresso",
+            "V60",
+            "Chemex",
+            "AeroPress",
+            "Milk Drink",
+            "Pour-Over",
+            "French Press",
+            "Moka Pot",
+            "Cold Brew"
+          ]
+        },
+        "author": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "roast_level": {
+          "enum": [
+            "Light",
+            "Medium",
+            "Dark"
+          ]
+        },
+        "bean_profile": {
+          "type": "string"
+        },
+        "dose_g": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yield_g": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "beverage weight (espresso-style)"
+        },
+        "water_ml": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "brew water (filter/immersion)"
+        },
+        "ratio": {
+          "type": "string",
+          "pattern": "^(1:[0-9.]+)?$"
+        },
+        "temp_c": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "grind_setting": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "at",
+              "kind",
+              "label"
+            ],
+            "properties": {
+              "at": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "seconds from start"
+              },
+              "kind": {
+                "enum": [
+                  "pour",
+                  "swirl",
+                  "stir",
+                  "press",
+                  "stop",
+                  "wait",
+                  "preinfuse",
+                  "shot"
+                ]
+              },
+              "label": {
+                "type": "string"
+              },
+              "target_g": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "cumulative scale weight; scales with dose"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "enum": [
+            "to_try",
+            "testing",
+            "favorite"
+          ]
+        },
+        "parent": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "recipe this experiment branched from"
+        },
+        "tweaks": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "ratings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "ts"
+            ],
+            "properties": {
+              "ts": {
+                "type": "integer"
+              },
+              "acidity": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "sweetness": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "body": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "bitterness": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "overall": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "caffeine_mg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "step": {
+      "type": "object",
+      "required": [
+        "at",
+        "kind",
+        "label"
+      ],
+      "properties": {
+        "at": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "seconds from start"
+        },
+        "kind": {
+          "enum": [
+            "pour",
+            "swirl",
+            "stir",
+            "press",
+            "stop",
+            "wait",
+            "preinfuse",
+            "shot"
+          ]
+        },
+        "label": {
+          "type": "string"
+        },
+        "target_g": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "cumulative scale weight; scales with dose"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "rating": {
+      "type": "object",
+      "required": [
+        "ts"
+      ],
+      "properties": {
+        "ts": {
+          "type": "integer"
+        },
+        "acidity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "sweetness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "body": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "bitterness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "overall": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

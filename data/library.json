@@ -1,0 +1,460 @@
+{
+  "schema": 1,
+  "library": [
+    {
+      "author": "Café classic",
+      "source": "Ristretto-leaning double + thin microfoam",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": 32,
+      "water_ml": null,
+      "tags": [
+        "milk"
+      ],
+      "notes": "",
+      "id": "lib-flat-white",
+      "name": "Flat White",
+      "method": "Milk Drink",
+      "dose_g": 18,
+      "ratio": "1:1.8",
+      "temp_c": 93,
+      "grind_setting": "Espresso fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Full pressure"
+        },
+        {
+          "at": 26,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 32
+        },
+        {
+          "at": 30,
+          "kind": "pour",
+          "label": "Pour 120ml silky microfoam (60°C)"
+        }
+      ],
+      "caffeine_mg": 126
+    },
+    {
+      "author": "Café classic",
+      "source": "Equal parts espresso and steamed milk",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": 36,
+      "water_ml": null,
+      "tags": [
+        "milk"
+      ],
+      "notes": "",
+      "id": "lib-cortado",
+      "name": "Cortado",
+      "method": "Milk Drink",
+      "dose_g": 18,
+      "ratio": "1:2",
+      "temp_c": 93,
+      "grind_setting": "Espresso fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Full pressure"
+        },
+        {
+          "at": 28,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 36
+        },
+        {
+          "at": 32,
+          "kind": "pour",
+          "label": "Add ~40ml lightly steamed milk"
+        }
+      ],
+      "caffeine_mg": 126
+    },
+    {
+      "author": "Scott Rao (style)",
+      "source": "Bloom 3x, single continuous pour, spin — approximate",
+      "roast_level": "Light",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 360,
+      "tags": [
+        "pour-over",
+        "v60"
+      ],
+      "notes": "",
+      "id": "lib-rao-v60",
+      "name": "Rao Spin V60",
+      "method": "V60",
+      "dose_g": 22,
+      "ratio": "1:16.4",
+      "temp_c": 99,
+      "grind_setting": "Medium-fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 66,
+          "note": "3x dose"
+        },
+        {
+          "at": 5,
+          "kind": "swirl",
+          "label": "Spin to wet everything"
+        },
+        {
+          "at": 45,
+          "kind": "pour",
+          "label": "One continuous pour",
+          "target_g": 360
+        },
+        {
+          "at": 80,
+          "kind": "swirl",
+          "label": "Spin to flatten the bed"
+        },
+        {
+          "at": 210,
+          "kind": "stop",
+          "label": "Drawdown done"
+        }
+      ],
+      "caffeine_mg": 210
+    },
+    {
+      "author": "James Hoffmann",
+      "source": "https://www.youtube.com/watch?v=st571DYYTR8",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 500,
+      "tags": [
+        "immersion",
+        "hoffmann"
+      ],
+      "notes": "",
+      "id": "lib-hoffmann-french-press",
+      "name": "French Press (no-plunge technique)",
+      "method": "French Press",
+      "dose_g": 30,
+      "ratio": "1:16.7",
+      "temp_c": 100,
+      "grind_setting": "Medium",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Add all the water",
+          "target_g": 500
+        },
+        {
+          "at": 240,
+          "kind": "stir",
+          "label": "Break the crust, skim the foam"
+        },
+        {
+          "at": 480,
+          "kind": "wait",
+          "label": "Wait for fines to settle (5-8 min)"
+        },
+        {
+          "at": 600,
+          "kind": "press",
+          "label": "Plunger to the surface only, pour slowly"
+        }
+      ],
+      "caffeine_mg": 280
+    },
+    {
+      "author": "Community classic",
+      "source": "Inverted immersion, flip and press",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 230,
+      "tags": [
+        "aeropress"
+      ],
+      "notes": "",
+      "id": "lib-inverted-aeropress",
+      "name": "Inverted AeroPress",
+      "method": "AeroPress",
+      "dose_g": 15,
+      "ratio": "1:15.3",
+      "temp_c": 90,
+      "grind_setting": "Medium-fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 40
+        },
+        {
+          "at": 30,
+          "kind": "pour",
+          "label": "Fill",
+          "target_g": 230
+        },
+        {
+          "at": 35,
+          "kind": "stir",
+          "label": "Stir 5x"
+        },
+        {
+          "at": 90,
+          "kind": "stir",
+          "label": "Cap on, flip carefully"
+        },
+        {
+          "at": 100,
+          "kind": "press",
+          "label": "Press ~30s"
+        },
+        {
+          "at": 130,
+          "kind": "stop",
+          "label": "Done"
+        }
+      ],
+      "caffeine_mg": 140
+    },
+    {
+      "author": "James Hoffmann",
+      "source": "https://www.youtube.com/watch?v=ZsMwCHgN1fo",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 170,
+      "tags": [
+        "moka"
+      ],
+      "notes": "",
+      "id": "lib-moka-pot",
+      "name": "Better Moka Pot",
+      "method": "Moka Pot",
+      "dose_g": 17,
+      "ratio": "1:10",
+      "temp_c": 100,
+      "grind_setting": "Slightly finer than V60, no tamping",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Fill base with just-boiled water",
+          "target_g": 170
+        },
+        {
+          "at": 30,
+          "kind": "wait",
+          "label": "Assemble, medium heat, lid open"
+        },
+        {
+          "at": 150,
+          "kind": "stop",
+          "label": "Coffee flows — cool the base under the tap at the gurgle"
+        }
+      ],
+      "caffeine_mg": 150
+    },
+    {
+      "author": "Community classic",
+      "source": "Flat-bed pulse pours",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 350,
+      "tags": [
+        "pour-over",
+        "kalita"
+      ],
+      "notes": "",
+      "id": "lib-kalita-wave",
+      "name": "Kalita Wave 185",
+      "method": "Pour-Over",
+      "dose_g": 22,
+      "ratio": "1:16",
+      "temp_c": 94,
+      "grind_setting": "Medium",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 50
+        },
+        {
+          "at": 40,
+          "kind": "pour",
+          "label": "Pulse 1",
+          "target_g": 150
+        },
+        {
+          "at": 70,
+          "kind": "pour",
+          "label": "Pulse 2",
+          "target_g": 250
+        },
+        {
+          "at": 100,
+          "kind": "pour",
+          "label": "Pulse 3",
+          "target_g": 350
+        },
+        {
+          "at": 210,
+          "kind": "stop",
+          "label": "Drawdown done"
+        }
+      ],
+      "caffeine_mg": 200
+    },
+    {
+      "author": "Café classic",
+      "source": "Espresso floated over tonic and ice",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": 36,
+      "water_ml": null,
+      "tags": [
+        "iced",
+        "espresso"
+      ],
+      "notes": "",
+      "id": "lib-espresso-tonic",
+      "name": "Espresso Tonic",
+      "method": "Milk Drink",
+      "dose_g": 18,
+      "ratio": "1:2",
+      "temp_c": 93,
+      "grind_setting": "Espresso fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Full pressure"
+        },
+        {
+          "at": 28,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 36
+        },
+        {
+          "at": 32,
+          "kind": "pour",
+          "label": "Float slowly over 150ml tonic + ice"
+        }
+      ],
+      "caffeine_mg": 126
+    },
+    {
+      "author": "Community classic",
+      "source": "Immersion then drawdown",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": null,
+      "water_ml": 320,
+      "tags": [
+        "immersion"
+      ],
+      "notes": "",
+      "id": "lib-clever-dripper",
+      "name": "Clever Dripper",
+      "method": "Pour-Over",
+      "dose_g": 20,
+      "ratio": "1:16",
+      "temp_c": 96,
+      "grind_setting": "Medium",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Add all the water",
+          "target_g": 320
+        },
+        {
+          "at": 30,
+          "kind": "stir",
+          "label": "Stir to break clumps"
+        },
+        {
+          "at": 120,
+          "kind": "wait",
+          "label": "Lid on, steep"
+        },
+        {
+          "at": 150,
+          "kind": "pour",
+          "label": "Set on cup to drain"
+        },
+        {
+          "at": 210,
+          "kind": "stop",
+          "label": "Drained"
+        }
+      ],
+      "caffeine_mg": 190
+    },
+    {
+      "author": "Café classic",
+      "source": "Short, syrupy espresso",
+      "roast_level": "Medium",
+      "bean_profile": "",
+      "yield_g": 27,
+      "water_ml": null,
+      "tags": [
+        "espresso"
+      ],
+      "notes": "",
+      "id": "lib-ristretto",
+      "name": "Ristretto 1:1.5",
+      "method": "Espresso",
+      "dose_g": 18,
+      "ratio": "1:1.5",
+      "temp_c": 92,
+      "grind_setting": "Finer than classic",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Full pressure"
+        },
+        {
+          "at": 22,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 27
+        }
+      ],
+      "caffeine_mg": 110
+    }
+  ]
+}

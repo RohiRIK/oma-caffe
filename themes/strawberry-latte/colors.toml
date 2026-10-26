@@ -1,0 +1,38 @@
+# Strawberry Latte — strawberry-milk foam, caramel drizzle, cocoa ink.
+# The cute one. Every text key clears WCAG AA (4.5:1) on background, the
+# pink surface and the selection; test/test_contrast.py enforces it.
+mode = "light"
+
+accent = "#A3324F"
+selection = "#F7D6DC"
+muted = "#7E4F57"
+
+background = "#FFF5F3"
+dark_background = "#FBE9EA"
+darker_background = "#F6DDE0"
+lighter_background = "#FBE3E6"
+
+foreground = "#4A2A2C"
+dark_foreground = "#734A50"
+light_foreground = "#5C3A3E"
+bright_foreground = "#3A1F21"
+
+red = "#A82B3C"
+yellow = "#7A5600"
+orange = "#9C4416"
+green = "#3F6B3A"
+cyan = "#1E6468"
+blue = "#3B5A8C"
+magenta = "#9A2F78"
+brown = "#7A4A2A"
+
+bright_red = "#8F2232"
+bright_yellow = "#664800"
+bright_green = "#345A30"
+bright_cyan = "#185457"
+bright_blue = "#314C78"
+bright_magenta = "#822765"
+
+# Strawberry window borders (non-text UI: 3:1 is the bar).
+hyprland_active_border = "#D1667F"
+hyprland_inactive_border = "#F7D6DC"

@@ -1,0 +1,547 @@
+{
+  "schema": 1,
+  "recipes": [
+    {
+      "author": "Specialty standard",
+      "source": "Common modern espresso baseline",
+      "roast_level": "Medium",
+      "bean_profile": "Chocolate, caramel, toasted nut (Brazil / Colombia)",
+      "yield_g": 36,
+      "water_ml": null,
+      "tags": [
+        "espresso",
+        "baseline"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "classic-espresso-1-2",
+      "name": "Classic Espresso 1:2",
+      "method": "Espresso",
+      "dose_g": 18,
+      "ratio": "1:2",
+      "temp_c": 93,
+      "grind_setting": "Fine — adjust to hit 25-30s",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion at low pressure"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Ramp to 9 bar"
+        },
+        {
+          "at": 28,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 36,
+          "note": "Target 36g in the cup"
+        }
+      ],
+      "caffeine_mg": 126
+    },
+    {
+      "author": "Cameron et al. (2020) / popularised by Lance Hedrick",
+      "source": "Systematically Improving Espresso, Matter 2020",
+      "roast_level": "Light",
+      "bean_profile": "Fruity washed coffees — stone fruit, citrus",
+      "yield_g": 54,
+      "water_ml": null,
+      "tags": [
+        "espresso",
+        "turbo",
+        "fast"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "turbo-shot-1-3",
+      "name": "Turbo Shot 1:3",
+      "method": "Espresso",
+      "dose_g": 18,
+      "ratio": "1:3",
+      "temp_c": 93,
+      "grind_setting": "Coarser than classic (≈ +4 clicks)",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Short pre-infusion"
+        },
+        {
+          "at": 2,
+          "kind": "shot",
+          "label": "Hold ~6 bar, fast flow"
+        },
+        {
+          "at": 15,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 54,
+          "note": "High yield, ~15s total"
+        }
+      ],
+      "caffeine_mg": 110
+    },
+    {
+      "author": "Scott Rao (style)",
+      "source": "Rao-style light-roast allongé",
+      "roast_level": "Light",
+      "bean_profile": "Floral Ethiopian / Kenyan",
+      "yield_g": 72,
+      "water_ml": null,
+      "tags": [
+        "espresso",
+        "allonge",
+        "light-roast"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "allonge-1-4",
+      "name": "Allongé 1:4.5",
+      "method": "Espresso",
+      "dose_g": 16,
+      "ratio": "1:4.5",
+      "temp_c": 94,
+      "grind_setting": "Coarse for espresso, high flow",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 6,
+          "kind": "shot",
+          "label": "Full pressure, let it run"
+        },
+        {
+          "at": 30,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 72,
+          "note": "Long, tea-like body"
+        }
+      ],
+      "caffeine_mg": 115
+    },
+    {
+      "author": "James Hoffmann",
+      "source": "https://www.youtube.com/watch?v=AI4ynXzkSQo",
+      "roast_level": "Light",
+      "bean_profile": "Washed Ethiopian — jasmine, bergamot",
+      "yield_g": null,
+      "water_ml": 250,
+      "tags": [
+        "pour-over",
+        "v60",
+        "hoffmann"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "hoffmann-ultimate-v60",
+      "name": "Ultimate V60 (15g)",
+      "method": "V60",
+      "dose_g": 15,
+      "ratio": "1:16.7",
+      "temp_c": 100,
+      "grind_setting": "Medium-fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 30,
+          "note": "2x dose, wet everything"
+        },
+        {
+          "at": 10,
+          "kind": "swirl",
+          "label": "Swirl to saturate the bed"
+        },
+        {
+          "at": 45,
+          "kind": "pour",
+          "label": "First main pour",
+          "target_g": 150,
+          "note": "Reach 60% by 1:15"
+        },
+        {
+          "at": 75,
+          "kind": "pour",
+          "label": "Second main pour",
+          "target_g": 250,
+          "note": "Reach 100% by 1:45"
+        },
+        {
+          "at": 105,
+          "kind": "stir",
+          "label": "Stir once each way"
+        },
+        {
+          "at": 110,
+          "kind": "swirl",
+          "label": "Gentle swirl for a flat bed"
+        },
+        {
+          "at": 210,
+          "kind": "stop",
+          "label": "Drawdown done (~3:30)"
+        }
+      ],
+      "caffeine_mg": 150
+    },
+    {
+      "author": "Tetsu Kasuya (2016 World Brewers Cup)",
+      "source": "World Brewers Cup 2016 winning method",
+      "roast_level": "Medium",
+      "bean_profile": "Balanced — first 40% tunes sweetness/acidity, last 60% tunes strength",
+      "yield_g": null,
+      "water_ml": 300,
+      "tags": [
+        "pour-over",
+        "v60",
+        "championship"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "kasuya-4-6",
+      "name": "4:6 Method",
+      "method": "V60",
+      "dose_g": 20,
+      "ratio": "1:15",
+      "temp_c": 92,
+      "grind_setting": "Coarse",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Pour 1 (sweetness/acidity)",
+          "target_g": 50
+        },
+        {
+          "at": 45,
+          "kind": "pour",
+          "label": "Pour 2",
+          "target_g": 120
+        },
+        {
+          "at": 90,
+          "kind": "pour",
+          "label": "Pour 3 (strength)",
+          "target_g": 180
+        },
+        {
+          "at": 135,
+          "kind": "pour",
+          "label": "Pour 4",
+          "target_g": 240
+        },
+        {
+          "at": 180,
+          "kind": "pour",
+          "label": "Pour 5",
+          "target_g": 300
+        },
+        {
+          "at": 210,
+          "kind": "stop",
+          "label": "Remove the dripper"
+        }
+      ],
+      "caffeine_mg": 190
+    },
+    {
+      "author": "Chemex community standard",
+      "source": "Bloom + pulse method for a 6-cup Chemex",
+      "roast_level": "Medium",
+      "bean_profile": "Central American — milk chocolate, red apple",
+      "yield_g": null,
+      "water_ml": 500,
+      "tags": [
+        "pour-over",
+        "chemex"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "chemex-classic",
+      "name": "Chemex Classic",
+      "method": "Chemex",
+      "dose_g": 30,
+      "ratio": "1:16.7",
+      "temp_c": 96,
+      "grind_setting": "Medium-coarse (kosher salt)",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 60,
+          "note": "Rinse the paper first"
+        },
+        {
+          "at": 45,
+          "kind": "pour",
+          "label": "Pulse 1",
+          "target_g": 250
+        },
+        {
+          "at": 90,
+          "kind": "pour",
+          "label": "Pulse 2",
+          "target_g": 400
+        },
+        {
+          "at": 135,
+          "kind": "pour",
+          "label": "Pulse 3",
+          "target_g": 500
+        },
+        {
+          "at": 150,
+          "kind": "swirl",
+          "label": "Gentle swirl"
+        },
+        {
+          "at": 270,
+          "kind": "stop",
+          "label": "Drawdown done (~4:30)"
+        }
+      ],
+      "caffeine_mg": 280
+    },
+    {
+      "author": "James Hoffmann",
+      "source": "https://www.youtube.com/watch?v=j6VlT_jUVPc",
+      "roast_level": "Light",
+      "bean_profile": "Any fresh light roast",
+      "yield_g": null,
+      "water_ml": 200,
+      "tags": [
+        "aeropress",
+        "hoffmann"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "hoffmann-ultimate-aeropress",
+      "name": "Ultimate AeroPress",
+      "method": "AeroPress",
+      "dose_g": 11,
+      "ratio": "1:18.2",
+      "temp_c": 99,
+      "grind_setting": "Fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Add all the water",
+          "target_g": 200
+        },
+        {
+          "at": 5,
+          "kind": "wait",
+          "label": "Insert plunger 1cm, steep"
+        },
+        {
+          "at": 120,
+          "kind": "swirl",
+          "label": "Swirl gently"
+        },
+        {
+          "at": 150,
+          "kind": "press",
+          "label": "Press gently, ~30s"
+        },
+        {
+          "at": 180,
+          "kind": "stop",
+          "label": "Done — stop at the hiss"
+        }
+      ],
+      "caffeine_mg": 110
+    },
+    {
+      "author": "World AeroPress Championship style",
+      "source": "Concentrate + bypass structure common in WAC finals (approximate — verify against a specific winner)",
+      "roast_level": "Light",
+      "bean_profile": "Sweet, juicy naturals",
+      "yield_g": null,
+      "water_ml": 220,
+      "tags": [
+        "aeropress",
+        "championship",
+        "bypass"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "aeropress-bypass-concentrate",
+      "name": "Championship-style Bypass",
+      "method": "AeroPress",
+      "dose_g": 18,
+      "ratio": "1:12.2",
+      "temp_c": 85,
+      "grind_setting": "Medium-fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Bloom",
+          "target_g": 50,
+          "note": "Stir 10s"
+        },
+        {
+          "at": 30,
+          "kind": "pour",
+          "label": "Fill to concentrate",
+          "target_g": 100
+        },
+        {
+          "at": 60,
+          "kind": "stir",
+          "label": "Stir 3x, cap on"
+        },
+        {
+          "at": 90,
+          "kind": "press",
+          "label": "Press to the hiss",
+          "note": "~30s press"
+        },
+        {
+          "at": 120,
+          "kind": "pour",
+          "label": "Bypass with hot water",
+          "target_g": 220,
+          "note": "Taste and adjust bypass"
+        }
+      ],
+      "caffeine_mg": 170
+    },
+    {
+      "author": "Café classic",
+      "source": "Shaken espresso over ice with oat milk",
+      "roast_level": "Medium",
+      "bean_profile": "Chocolatey, low-acid espresso",
+      "yield_g": 36,
+      "water_ml": null,
+      "tags": [
+        "milk",
+        "iced",
+        "espresso"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "iced-shaken-espresso",
+      "name": "Iced Shaken Espresso",
+      "method": "Milk Drink",
+      "dose_g": 18,
+      "ratio": "1:2",
+      "temp_c": 93,
+      "grind_setting": "Espresso fine",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "preinfuse",
+          "label": "Pre-infusion"
+        },
+        {
+          "at": 5,
+          "kind": "shot",
+          "label": "Full pressure"
+        },
+        {
+          "at": 28,
+          "kind": "stop",
+          "label": "Stop the shot",
+          "target_g": 36
+        },
+        {
+          "at": 35,
+          "kind": "stir",
+          "label": "Shake with ice + 10g syrup for 15s"
+        },
+        {
+          "at": 55,
+          "kind": "pour",
+          "label": "Strain over ice, top with 120ml oat milk"
+        }
+      ],
+      "caffeine_mg": 126
+    },
+    {
+      "author": "Café classic",
+      "source": "Immersion concentrate, dilute 1:1 to serve",
+      "roast_level": "Medium",
+      "bean_profile": "Chocolate, nutty, low acidity",
+      "yield_g": null,
+      "water_ml": 800,
+      "tags": [
+        "cold-brew",
+        "batch"
+      ],
+      "status": "to_try",
+      "parent": null,
+      "tweaks": {},
+      "ratings": [],
+      "notes": "",
+      "id": "cold-brew-concentrate",
+      "name": "Cold Brew Concentrate 1:8",
+      "method": "Cold Brew",
+      "dose_g": 100,
+      "ratio": "1:8",
+      "temp_c": 20,
+      "grind_setting": "Extra coarse",
+      "steps": [
+        {
+          "at": 0,
+          "kind": "pour",
+          "label": "Add cold water",
+          "target_g": 800
+        },
+        {
+          "at": 60,
+          "kind": "stir",
+          "label": "Stir until all grounds are wet"
+        },
+        {
+          "at": 43200,
+          "kind": "wait",
+          "label": "Steep in the fridge"
+        },
+        {
+          "at": 50400,
+          "kind": "stop",
+          "label": "Filter, then dilute 1:1 to serve"
+        }
+      ],
+      "caffeine_mg": 200
+    }
+  ]
+}

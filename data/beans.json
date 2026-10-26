@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "active_bean": "house-blend",
+  "active_grinder": "main",
+  "grinders": [
+    {
+      "id": "main",
+      "name": "My grinder",
+      "burrs": "",
+      "notes": "Rename me: oma-caffe beans grinder"
+    }
+  ],
+  "beans": [
+    {
+      "id": "house-blend",
+      "roaster": "Your roaster",
+      "name": "House Espresso",
+      "origin": "Brazil / Colombia",
+      "process": "Natural / Washed",
+      "roast_level": "Medium",
+      "roast_date": "",
+      "notes": "Chocolate, caramel",
+      "grind_setting": "12",
+      "grinder": "main"
+    }
+  ]
+}

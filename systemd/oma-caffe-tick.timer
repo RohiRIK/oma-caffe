@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the oma-caffe tick every minute
+PartOf=graphical-session.target
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=5s
+Persistent=false
+
+[Install]
+WantedBy=timers.target

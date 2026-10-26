@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "oma-caffe config.json (partial overrides of data/config.default.json)",
+  "type": "object",
+  "properties": {
+    "half_life_hours": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 12
+    },
+    "daily_limit_mg": {
+      "type": "number"
+    },
+    "cutoff_hour": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 23
+    },
+    "profile_order": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profiles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "mg": {
+            "type": "number"
+          },
+          "method": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "breaks": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "interval_min": {
+          "type": "integer",
+          "minimum": 5
+        },
+        "active_from": {
+          "type": "string",
+          "pattern": "^\\d{1,2}:\\d{2}$"
+        },
+        "active_until": {
+          "type": "string",
+          "pattern": "^\\d{1,2}:\\d{2}$"
+        },
+        "break_min": {
+          "type": "integer"
+        },
+        "snooze_min": {
+          "type": "integer"
+        },
+        "defer_fullscreen_min": {
+          "type": "integer"
+        }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "auto": {
+          "type": "boolean"
+        },
+        "light": {
+          "type": "string"
+        },
+        "dark": {
+          "type": "string"
+        },
+        "light_at": {
+          "type": "string"
+        },
+        "dark_at": {
+          "type": "string"
+        }
+      }
+    },
+    "ambience": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "file, directory or URL; empty = synthesized"
+        },
+        "volume": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 130
+        }
+      }
+    },
+    "cues": {
+      "type": "object",
+      "properties": {
+        "sound": {
+          "type": "boolean"
+        },
+        "osd": {
+          "type": "boolean"
+        },
+        "notify": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

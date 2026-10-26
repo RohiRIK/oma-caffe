@@ -1,0 +1,367 @@
+{
+  "schema": 1,
+  "source": "Wikimedia Commons",
+  "wallpapers": [
+    {
+      "id": "night-cafe",
+      "name": "The Night Café — Van Gogh",
+      "title": "Van Gogh - The Night Café (1888).jpg",
+      "tags": [
+        "art",
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 7408,
+      "height": 5848,
+      "artist": "Vincent van Gogh",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_The_Night_Caf%C3%A9_(1888).jpg"
+    },
+    {
+      "id": "gauguin-night-cafe",
+      "name": "The Night Café — Gauguin",
+      "title": "Paul Gauguin - The Night Café.jpg",
+      "tags": [
+        "art"
+      ],
+      "tone": "dark",
+      "width": 3876,
+      "height": 3000,
+      "artist": "Paul Gauguin",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_The_Night_Caf%C3%A9.jpg"
+    },
+    {
+      "id": "vangogh-still-life",
+      "name": "Still Life with Coffee Pot — Van Gogh",
+      "title": "Van Gogh - Stillleben mit Kaffeekanne, Geschirr und Früchten.jpeg",
+      "tags": [
+        "art"
+      ],
+      "tone": "light",
+      "width": 3840,
+      "height": 2940,
+      "artist": "Vincent van Gogh",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Stillleben_mit_Kaffeekanne,_Geschirr_und_Fr%C3%BCchten.jpeg"
+    },
+    {
+      "id": "cena-de-cafe",
+      "name": "Café Scene — Rodolfo Amoedo",
+      "title": "Rodolfo Amoedo - Cena de Café.jpg",
+      "tags": [
+        "art",
+        "cozy"
+      ],
+      "tone": "light",
+      "width": 4417,
+      "height": 3455,
+      "artist": "Rodolfo Amoedo",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Rodolfo_Amoedo_-_Cena_de_Caf%C3%A9.jpg"
+    },
+    {
+      "id": "parisian-cafe",
+      "name": "Parisian Café — Ilya Repin",
+      "title": "Parisian Cafe by Repin.jpg",
+      "tags": [
+        "art"
+      ],
+      "tone": "dark",
+      "width": 3200,
+      "height": 2009,
+      "artist": "Ilya Repin",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Parisian_Cafe_by_Repin.jpg"
+    },
+    {
+      "id": "cafe-harcourt",
+      "name": "Café d'Harcourt — Henri Evenepoel",
+      "title": "1897 Evenepoel Im Café d´Harcourt in Paris anagoria.JPG",
+      "tags": [
+        "art"
+      ],
+      "tone": "dark",
+      "width": 3031,
+      "height": 2302,
+      "artist": "Henri Evenepoel",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:1897_Evenepoel_Im_Caf%C3%A9_d%C2%B4Harcourt_in_Paris_anagoria.JPG"
+    },
+    {
+      "id": "bag-of-coffee",
+      "name": "The Bag of Coffee — Juan Gris",
+      "title": "Juan Gris - Le sac de café (The Bag of Coffee) (1920).jpg",
+      "tags": [
+        "art",
+        "minimal"
+      ],
+      "tone": "light",
+      "width": 6674,
+      "height": 5449,
+      "artist": "Juan Gris",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_Le_sac_de_caf%C3%A9_(The_Bag_of_Coffee)_(1920).jpg"
+    },
+    {
+      "id": "anker-still-life",
+      "name": "Still Life with Coffee — Albert Anker",
+      "title": "Albert Anker - Stillleben mit Kaffee (1877).jpg",
+      "tags": [
+        "art",
+        "minimal"
+      ],
+      "tone": "light",
+      "width": 6020,
+      "height": 4584,
+      "artist": "Albert Anker",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Albert_Anker_-_Stillleben_mit_Kaffee_(1877).jpg"
+    },
+    {
+      "id": "dark-cup-pencil",
+      "name": "Dark cup & pencil",
+      "title": "Monochrome coffee and pencil (Unsplash).jpg",
+      "tags": [
+        "minimal"
+      ],
+      "tone": "dark",
+      "width": 6932,
+      "height": 4680,
+      "artist": "PICSELI picseli",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Monochrome_coffee_and_pencil_(Unsplash).jpg"
+    },
+    {
+      "id": "black-coffee-top",
+      "name": "Black coffee from above",
+      "title": "Simple is beautiful cup (Unsplash).jpg",
+      "tags": [
+        "minimal"
+      ],
+      "tone": "light",
+      "width": 6000,
+      "height": 4000,
+      "artist": "Jeffrey Wegrzyn jeffreymwegrzyn",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Simple_is_beautiful_cup_(Unsplash).jpg"
+    },
+    {
+      "id": "white-espresso",
+      "name": "White espresso",
+      "title": "Espresso Coffee 01.jpg",
+      "tags": [
+        "minimal"
+      ],
+      "tone": "light",
+      "width": 6720,
+      "height": 4480,
+      "artist": "Jubair1985",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Espresso_Coffee_01.jpg"
+    },
+    {
+      "id": "snowy-window-cup",
+      "name": "Snowy window cup",
+      "title": "Hot Coffee on a rainy day - Flickr - DeaPeaJay.jpg",
+      "tags": [
+        "minimal",
+        "cozy"
+      ],
+      "tone": "light",
+      "width": 3601,
+      "height": 2402,
+      "artist": "David Joyce from Gray, TN, United States",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Hot_Coffee_on_a_rainy_day_-_Flickr_-_DeaPeaJay.jpg"
+    },
+    {
+      "id": "bulb-bokeh",
+      "name": "Café bulb at night",
+      "title": "Light over linear bokeh. (Unsplash).jpg",
+      "tags": [
+        "minimal",
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 6000,
+      "height": 4000,
+      "artist": "Christopher James Scheller cjscheller",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Light_over_linear_bokeh._(Unsplash).jpg"
+    },
+    {
+      "id": "fireplace-book",
+      "name": "Fireplace & a book",
+      "title": "Cozy Den (Unsplash).jpg",
+      "tags": [
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 5184,
+      "height": 3456,
+      "artist": "Pavan Trikutam ptrikutam",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cozy_Den_(Unsplash).jpg"
+    },
+    {
+      "id": "reading-mug",
+      "name": "Reading with a mug",
+      "title": "Reading in Bangkok (Unsplash).jpg",
+      "tags": [
+        "cozy"
+      ],
+      "tone": "light",
+      "width": 5321,
+      "height": 3551,
+      "artist": "rawpixel.com rawpixel",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Reading_in_Bangkok_(Unsplash).jpg"
+    },
+    {
+      "id": "alarm-knit",
+      "name": "Morning on knitwear",
+      "title": "Book, coffee and clock Mumbai (Unsplash).jpg",
+      "tags": [
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 4288,
+      "height": 2848,
+      "artist": "Sanah Suvarna sanahsuvarna",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Book,_coffee_and_clock_Mumbai_(Unsplash).jpg"
+    },
+    {
+      "id": "sweater-bw",
+      "name": "Sweater & coffee (B&W)",
+      "title": "Sweaters and coffee (Unsplash).jpg",
+      "tags": [
+        "cozy",
+        "minimal"
+      ],
+      "tone": "dark",
+      "width": 5616,
+      "height": 3744,
+      "artist": "Nathan Walker nwphoto",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sweaters_and_coffee_(Unsplash).jpg"
+    },
+    {
+      "id": "latte-macro",
+      "name": "Latte art macro",
+      "title": "Athena Lam 2016 (Unsplash).jpg",
+      "tags": [
+        "latte"
+      ],
+      "tone": "dark",
+      "width": 4288,
+      "height": 2848,
+      "artist": "Athena Lam thecupandtheroad",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Athena_Lam_2016_(Unsplash).jpg"
+    },
+    {
+      "id": "moody-rosetta",
+      "name": "Moody rosetta",
+      "title": "James Sutton 2017-03-05 (Unsplash).jpg",
+      "tags": [
+        "latte"
+      ],
+      "tone": "dark",
+      "width": 5184,
+      "height": 3456,
+      "artist": "James Sutton jamessutton_photography",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:James_Sutton_2017-03-05_(Unsplash).jpg"
+    },
+    {
+      "id": "rosetta-teal",
+      "name": "Rosetta on teal",
+      "title": "James Sutton 2017-01-16 (Unsplash).jpg",
+      "tags": [
+        "latte",
+        "minimal"
+      ],
+      "tone": "dark",
+      "width": 5184,
+      "height": 3456,
+      "artist": "James Sutton jamessutton_photography",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:James_Sutton_2017-01-16_(Unsplash).jpg"
+    },
+    {
+      "id": "latte-dark-wood",
+      "name": "Latte on dark wood",
+      "title": "Robert Nelson 2017 (Unsplash).jpg",
+      "tags": [
+        "latte",
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 7360,
+      "height": 4912,
+      "artist": "Robert Nelson iambobnelson",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Robert_Nelson_2017_(Unsplash).jpg"
+    },
+    {
+      "id": "latte-succulent",
+      "name": "Latte & succulent",
+      "title": "Rochester, United States (Unsplash d44Vd16m0LM).jpg",
+      "tags": [
+        "latte"
+      ],
+      "tone": "light",
+      "width": 4898,
+      "height": 3265,
+      "artist": "Lesly B. Juarez jblesly",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Rochester,_United_States_(Unsplash_d44Vd16m0LM).jpg"
+    },
+    {
+      "id": "hands-latte",
+      "name": "Hands around a latte",
+      "title": "Nathan Dumlao 2017-05-26 (Unsplash).jpg",
+      "tags": [
+        "latte",
+        "cozy"
+      ],
+      "tone": "dark",
+      "width": 6720,
+      "height": 4480,
+      "artist": "Nathan Dumlao nate_dumlao",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Nathan_Dumlao_2017-05-26_(Unsplash).jpg"
+    },
+    {
+      "id": "cappuccinos-cake",
+      "name": "Cappuccinos & cake",
+      "title": "Cappuccinos and cake (Unsplash).jpg",
+      "tags": [
+        "latte",
+        "cozy"
+      ],
+      "tone": "light",
+      "width": 5760,
+      "height": 3840,
+      "artist": "Alisa Anton alisaanton",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cappuccinos_and_cake_(Unsplash).jpg"
+    },
+    {
+      "id": "beans-and-cup",
+      "name": "Beans & cup",
+      "title": "Galway City, Ireland (Unsplash).jpg",
+      "tags": [
+        "latte"
+      ],
+      "tone": "light",
+      "width": 5831,
+      "height": 3893,
+      "artist": "fireskystudios.com asthetik",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Galway_City,_Ireland_(Unsplash).jpg"
+    }
+  ]
+}

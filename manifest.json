@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "rohirik.oma-caffe",
+  "name": "oma-caffe",
+  "version": "0.1.0",
+  "author": "RohiRIK",
+  "license": "MIT",
+  "description": "Specialty coffee suite: a bar cup with caffeine half-life, a café panel with stats, XP and achievements, the Studio window for recipes, guided brewing, dial-in, beans, gear-aware grind advice and a café wallpaper gallery, plus full-screen Coffee Time breaks.",
+  "kinds": [
+    "bar-widget",
+    "overlay"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "overlay": "Overlay.qml"
+  },
+  "barWidget": {
+    "displayName": "oma-caffe",
+    "description": "Cups today and (optionally) active caffeine. Left: café panel · Middle: +1 cup · Right: Caffeine Lock · Scroll: brew profile.",
+    "category": "Productivity",
+    "defaultSection": "right",
+    "allowMultiple": false,
+    "defaults": {
+      "showMg": true,
+      "refreshIntervalSec": 30
+    },
+    "schema": [
+      {
+        "key": "showMg",
+        "type": "boolean",
+        "label": "Show active caffeine (mg)",
+        "defaultValue": true
+      },
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh every (seconds)",
+        "min": 10,
+        "max": 300,
+        "step": 10,
+        "defaultValue": 30
+      }
+    ]
+  }
+}

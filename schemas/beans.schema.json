@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "oma-caffe beans.json",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "active_bean": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "active_grinder": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grinders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "burrs": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "beans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "roaster": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "process": {
+            "type": "string"
+          },
+          "roast_level": {
+            "type": "string"
+          },
+          "roast_date": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "grind_setting": {
+            "type": "string"
+          },
+          "grinder": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

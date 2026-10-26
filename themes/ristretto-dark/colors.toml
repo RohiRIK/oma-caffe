@@ -1,0 +1,38 @@
+# Ristretto Dark — 90% dark roast, mahogany cards, copper crema, steamed milk.
+# Every text key clears WCAG AA (4.5:1) on background, the mahogany surface
+# and the selection; test/test_contrast.py enforces it.
+mode = "dark"
+
+accent = "#D48C46"
+selection = "#3A271E"
+muted = "#A8917F"
+
+background = "#140D0B"
+dark_background = "#0F0A08"
+darker_background = "#0A0605"
+lighter_background = "#231712"
+
+foreground = "#F2E8DF"
+dark_foreground = "#AE9B8E"
+light_foreground = "#E2D4C7"
+bright_foreground = "#FFF8F1"
+
+red = "#EC7A68"
+yellow = "#E6C06A"
+orange = "#E89A55"
+green = "#A9C77E"
+cyan = "#8CC5B8"
+blue = "#93B6DB"
+magenta = "#D9A0C5"
+brown = "#C08A63"
+
+bright_red = "#F59A8A"
+bright_yellow = "#F0D28E"
+bright_green = "#C0DA9C"
+bright_cyan = "#AAD8CD"
+bright_blue = "#B2CCE8"
+bright_magenta = "#E7BCD8"
+
+# Copper window borders (non-text UI: 3:1 is the bar).
+hyprland_active_border = "#D48C46"
+hyprland_inactive_border = "#3A271E"

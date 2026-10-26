@@ -1,0 +1,21 @@
+#!/bin/bash
+# Float, size and centre a window by title using Hyprland's runtime Lua
+# dispatchers, so oma-caffe never has to edit hyprland.lua.
+#   oma-caffe-float "oma-caffe Studio" 1180 800
+title=$1 width=${2:-1180} height=${3:-800}
+
+for _ in $(seq 25); do
+  addr=$(hyprctl clients -j | jq -r --arg t "$title" '.[] | select(.title == $t) | .address' | head -1)
+  [[ -n $addr ]] && break
+  sleep 0.1
+done
+[[ -z $addr ]] && exit 0
+
+w="address:$addr"
+floating=$(hyprctl clients -j | jq -r --arg a "$addr" '.[] | select(.address == $a) | .floating')
+if [[ $floating != true ]]; then
+  hyprctl dispatch "hl.dsp.window.float({ window = \"$w\", action = \"enable\" })" >/dev/null
+  hyprctl dispatch "hl.dsp.window.resize({ window = \"$w\", x = $width, y = $height })" >/dev/null
+  hyprctl dispatch "hl.dsp.window.center({ window = \"$w\" })" >/dev/null
+fi
+hyprctl dispatch "hl.dsp.focus({ window = \"$w\" })" >/dev/null 2>&1 || true

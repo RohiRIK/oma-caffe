@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "half_life_hours": 5,
+  "daily_limit_mg": 400,
+  "cutoff_hour": 16,
+  "profile_order": [
+    "espresso",
+    "turbo",
+    "pourover",
+    "aeropress",
+    "coldbrew"
+  ],
+  "profiles": {
+    "espresso": {
+      "label": "Espresso",
+      "mg": 126,
+      "method": "Espresso",
+      "icon": "☕"
+    },
+    "turbo": {
+      "label": "Turbo Shot",
+      "mg": 110,
+      "method": "Espresso",
+      "icon": "⚡"
+    },
+    "pourover": {
+      "label": "Chemex / Pour-Over",
+      "mg": 150,
+      "method": "Pour-Over",
+      "icon": "🫖"
+    },
+    "aeropress": {
+      "label": "AeroPress",
+      "mg": 120,
+      "method": "AeroPress",
+      "icon": "🧪"
+    },
+    "coldbrew": {
+      "label": "Cold Brew",
+      "mg": 200,
+      "method": "Cold Brew",
+      "icon": "🧊"
+    },
+    "ristretto": {
+      "label": "Ristretto",
+      "mg": 100,
+      "method": "Espresso",
+      "icon": "🤏"
+    },
+    "americano": {
+      "label": "Americano",
+      "mg": 126,
+      "method": "Espresso",
+      "icon": "🇺🇸"
+    },
+    "latte": {
+      "label": "Latte",
+      "mg": 126,
+      "method": "Milk Drink",
+      "icon": "🥛"
+    },
+    "cappuccino": {
+      "label": "Cappuccino",
+      "mg": 126,
+      "method": "Milk Drink",
+      "icon": "☁️"
+    },
+    "flatwhite": {
+      "label": "Flat White",
+      "mg": 126,
+      "method": "Milk Drink",
+      "icon": "🤍"
+    },
+    "cortado": {
+      "label": "Cortado",
+      "mg": 126,
+      "method": "Milk Drink",
+      "icon": "🥃"
+    },
+    "mocha": {
+      "label": "Mocha",
+      "mg": 130,
+      "method": "Milk Drink",
+      "icon": "🍫"
+    },
+    "icedlatte": {
+      "label": "Iced Latte",
+      "mg": 126,
+      "method": "Milk Drink",
+      "icon": "🧋"
+    },
+    "frenchpress": {
+      "label": "French Press",
+      "mg": 160,
+      "method": "Immersion",
+      "icon": "🫙"
+    },
+    "moka": {
+      "label": "Moka Pot",
+      "mg": 150,
+      "method": "Moka Pot",
+      "icon": "🌋"
+    },
+    "matcha": {
+      "label": "Matcha",
+      "mg": 70,
+      "method": "Tea",
+      "icon": "🍵"
+    },
+    "chai": {
+      "label": "Chai Latte",
+      "mg": 50,
+      "method": "Tea",
+      "icon": "🌶️"
+    },
+    "blacktea": {
+      "label": "Black Tea",
+      "mg": 47,
+      "method": "Tea",
+      "icon": "🫖"
+    },
+    "greentea": {
+      "label": "Green Tea",
+      "mg": 28,
+      "method": "Tea",
+      "icon": "🌿"
+    },
+    "yerba": {
+      "label": "Yerba Mate",
+      "mg": 80,
+      "method": "Tea",
+      "icon": "🧉"
+    },
+    "energy": {
+      "label": "Energy Drink",
+      "mg": 160,
+      "method": "Can",
+      "icon": "🔋"
+    },
+    "decaf": {
+      "label": "Decaf",
+      "mg": 4,
+      "method": "Any",
+      "icon": "😴"
+    }
+  },
+  "breaks": {
+    "enabled": true,
+    "interval_min": 90,
+    "active_from": "09:00",
+    "active_until": "19:00",
+    "break_min": 5,
+    "snooze_min": 15,
+    "defer_fullscreen_min": 10
+  },
+  "theme": {
+    "auto": false,
+    "light": "crema-light",
+    "dark": "ristretto-dark",
+    "light_at": "07:00",
+    "dark_at": "18:30",
+    "cute": "strawberry-latte"
+  },
+  "ambience": {
+    "source": "",
+    "volume": 35
+  },
+  "cues": {
+    "sound": true,
+    "osd": true,
+    "notify": true
+  },
+  "gear": {
+    "grinder": "",
+    "machine": "",
+    "offset": 0
+  },
+  "bar": {
+    "show_mg": true,
+    "show_cups": true
+  }
+}
