@@ -108,7 +108,7 @@ Item {
     t.running = false
     var clicks = t.report.filter(function(r) { return r.ok }).length
     t.log("done: " + clicks + " clicks, " + t.failures + " failures")
-    Quickshell.execDetached(["sh", "-c", 'printf "%s\\n" "$1" > "$2"', "sh",
+    Quickshell.execDetached(["sh", "-c", 'mkdir -p "$(dirname "$2")" && printf "%s\\n" "$1" > "$2"', "sh",
                              JSON.stringify({ clicks: clicks, failures: t.failures, report: t.report }),
                              t.s.sandbox + "/selftest.json"])
   }

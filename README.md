@@ -6,7 +6,19 @@ A specialty coffee suite for [Omarchy](https://omarchy.org): two hand-tuned
 themes, a bar module that counts cups and tracks active caffeine, a recipe lab
 with a guided brew timer, a shot dial-in log and full-screen Coffee Time breaks.
 
-![Crema Light and Ristretto Dark](themes/crema-light/preview.png)
+![oma-caffe Studio and the café panel](preview.png)
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Recipes](assets/screenshots/studio-recipes.png) **Recipes** with gear-aware grind advice | ![Brew](assets/screenshots/studio-brew.png) **Brew**, the guided timer |
+| ![Dial-in](assets/screenshots/studio-dial.png) **Dial-in** shot log | ![Discover](assets/screenshots/studio-discover.png) **Discover** recipes and import from the web |
+| ![Beans](assets/screenshots/studio-beans.png) **Beans & grinder** | ![Stats](assets/screenshots/studio-stats.png) **Stats** and achievements |
+| ![Wallpapers](assets/screenshots/studio-wallpapers.png) **Wallpapers** gallery | ![Settings](assets/screenshots/studio-settings.png) **Settings** with your grinder, machine and mods |
+| ![Café panel](assets/screenshots/cafe-panel.png) **Café panel** from the bar | ![Coffee Time](assets/screenshots/break-overlay.png) **Coffee Time** break overlay |
+
+Themes: ![Crema Light](themes/crema-light/preview.png)
 
 ## Install
 
@@ -238,6 +250,16 @@ ships with the plugin. To use a real recording:
 Schemas live in `schemas/`. Every read-modify-write takes an `flock` and lands
 with an atomic rename, so bar clicks, the minute tick and an open lab never
 lose each other's writes (`test_parallel_clicks_lose_nothing`).
+
+## Testing
+
+```bash
+python3 -m unittest discover -s test   # unit tests
+node test/model.test.js                # QML model helpers
+test/e2e.sh                            # every CLI call the GUI makes, in a throwaway HOME
+# In-shell dogfood: clicks every Studio button against a sandbox HOME
+omarchy-shell -q shell summon rohirik.oma-caffe '{"view":"studio","selftest":"/tmp/oma-sandbox"}'
+```
 
 ## Layout
 
