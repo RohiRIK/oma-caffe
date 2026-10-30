@@ -10,6 +10,12 @@ SANDBOX="$(mktemp -d -t oma-caffe-e2e.XXXXXX)"
 trap 'rm -rf "$SANDBOX"' EXIT
 export HOME="$SANDBOX" XDG_CONFIG_HOME="$SANDBOX/.config" XDG_DATA_HOME="$SANDBOX/.local/share" \
   XDG_STATE_HOME="$SANDBOX/.local/state" XDG_CACHE_HOME="$SANDBOX/.cache" OMA_CAFFE_HEADLESS=1
+# Stub optional desktop/Omarchy tools when running on a headless CI runner.
+mkdir -p "$SANDBOX/bin"
+for stub in gum mpv notify-send omarchy omarchy-shell omarchy-theme-set hyprctl gh; do
+  command -v "$stub" >/dev/null || { printf '#!/bin/sh\nexit 0\n' >"$SANDBOX/bin/$stub" && chmod +x "$SANDBOX/bin/$stub"; }
+done
+export PATH="$SANDBOX/bin:$PATH"
 # Reuse already-downloaded gallery thumbnails so the run stays offline-friendly.
 REAL_CACHE="${REAL_XDG_CACHE_HOME:-$(getent passwd "$(id -un)" | cut -d: -f6)/.cache}/oma-caffe/wallpapers"
 [ -d "$REAL_CACHE" ] && mkdir -p "$XDG_CACHE_HOME/oma-caffe" && cp -r "$REAL_CACHE" "$XDG_CACHE_HOME/oma-caffe/"
