@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#
+# Aggregated test runner for rohirik.oma-caffe.
+# Runs Model.js unit tests, Python backend/theme/seed/manifest tests, and the
+# sandboxed CLI end-to-end suite, continuing past failures so every suite runs.
+
+set -uo pipefail
+
+ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+TEST_DIR="$ROOT/test"
+
+failed=0
+
+run() {
+  local label="$1"
+  shift
+  printf '==> %s\n' "$label"
+  if ! "$@"; then
+    failed=1
+  fi
+}
+
+run "Model.js unit tests (node)" node "$TEST_DIR/model.test.js"
+run "Python unit, contrast, seed, and manifest tests" python3 -m unittest discover -s "$TEST_DIR" -p "test_*.py"
+run "CLI end-to-end suite (sandboxed)" bash "$TEST_DIR/e2e.sh"
+
+if [[ $failed -ne 0 ]]; then
+  printf '\nSome tests failed.\n' >&2
+  exit 1
+fi
+
+printf '\nAll tests passed.\n'
